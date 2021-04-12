@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Luis Saldana Torres - IS183 Midterm</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            body html {
+                width: 100vw;
+                height: 100vh;
+            }
+            h2 {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .main-container-grid{
+                display: grid;
+                grid-template-rows: 1fr 13fr 1fr;
+                height: 100%;
+                grid-gap: 1em;
+            }
+            .r1, .r3{
+                display: grid;
+                background-color: #ccc;
+                padding: 1em;
+                align-items: center;
+            }
+            .r3{
+                text-align: center;
+            }
+            .r2 {
+                height: 100%;
+                background-color: #f1f1f1;
+            }
+            .two-column {
+                display: grid;
+                grid-template-columns: 2fr 8fr;
+                background-color: #fff;
+                grid-column-gap: 1em;
+            }
+            .three-column{
+                display: grid;
+                grid-template-columns: 2fr 8fr 3fr;
+                background-color: #fff;
+                grid-column-gap: 1em;
+            }
+            .c1{
+                min-width: 200px;
+            }
+            .c1, .c3{
+                background-color: #ccc;
+            }
+            .text-center{
+                text-align: center;
+                margin: 15px auto 0px;
+                border-bottom: 1px solid #a8a7a7;
+                padding-bottom: 15px;
+            }
+            .left-nav{
+                list-style-type: none;
+            }
+            .left-nav > li > a {
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #ccc;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.7s;
+            }
+            .left-nav > li > a:hover{
+                background-color: #8d8c8c;
+            }
+            .c2 {
+               padding: 40px 20%;
+            }
+            .h2-content{
+                grid-column: 1 /5;
+                height: 22px;
+                width: 150px;
+                
+            }
+            .c2 > img {
+                width: 100%;
+                align-self: center;
+                max-height: 130px;
+            }
+            .back-button {
+                padding: 7px 16px;
+                background-color: #ccc;
+                float: right;
+                /* margin-bottom: 15px; */
+            }
+            .back-button:hover {
+                background-color: #f1f1f1;
+                transition-duration: 5s;
+            }
+        </style>
+    </head>
+    <body class="main-container-grid">
+        <div class="r1">
+            <h2> 
+                Luis Saldana    
+            </h2>
+        </div>
+        <div class="r2 one-column">
+            <div class="c2 ">
+                <a href="./home.html" class="back-button" >Back Home</a>
+                <h2 class="h2-content">Company Information</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem possimus repudiandae non corrupti placeat tenetur, fugit deleniti quo blanditiis aperiam dicta pariatur vel perspiciatis ipsa. Autem perferendis quaerat nostrum id impedit aperiam, obcaecati consectetur ut at natus maiores unde quo. Debitis temporibus atque magnam maxime voluptatibus cum quibusdam expedita?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem possimus repudiandae non corrupti placeat tenetur, fugit deleniti quo blanditiis aperiam dicta pariatur vel perspiciatis ipsa. Autem perferendis quaerat nostrum id impedit aperiam, obcaecati consectetur ut at natus maiores unde quo. Debitis temporibus atque magnam maxime voluptatibus cum quibusdam expedita?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quidem possimus repudiandae non corrupti placeat tenetur, fugit deleniti quo blanditiis aperiam dicta pariatur vel perspiciatis ipsa. Autem perferendis quaerat nostrum id impedit aperiam, obcaecati consectetur ut at natus maiores unde quo. Debitis temporibus atque magnam maxime voluptatibus cum quibusdam expedita?</p>
+            </div>
+        </div>
+        <div class="r3">
+            Copyright 2021 - Created By Luis Saldana 
+        </div>
+        <script type="text/javascript" src="./js/contact.js"></script>
+    </body>
+</html>
