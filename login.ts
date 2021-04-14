@@ -3,13 +3,10 @@ class Login {
     }
     login() {
         const usernameInput = document.getElementById('username');
-        console.log('from login() usernameInput', usernameInput);
-        const passwordInut = document.getElementById('password');
+        const passwordInput = document.getElementById('password');
         let username = usernameInput.value;
-        let password = passwordInut.value
-        console.log('username', username)
-        console.log('username', username)
-        if(username === 'lphan' && password === 'abc123'){
+        let password = passwordInput.value
+        if(username === 'luis' && password === 'midterm'){
             this.goToHome();
         }else {
             this.displayError();
@@ -18,6 +15,7 @@ class Login {
     displayError(){
         const errorBox = document.getElementById('error-box');
         errorBox.innerHTML = "User not found!";
+        errorBox.style = "display: block;";
         const interval = setInterval(() => {
             errorBox.style = "display: none;";
             clearInterval(interval);
@@ -25,7 +23,7 @@ class Login {
     }
     
     goToHome() {
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     }
 }
 const login = new Login();

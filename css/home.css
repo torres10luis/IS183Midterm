@@ -1,0 +1,94 @@
+            * {
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+                /* primary-color= #9bc1bc
+                   secondary-color= #f4f1bb
+                   accent-color= #e6ebe0 */
+            }
+            body html {
+                width: 100vw;
+                height: 100vh;
+            }
+            h2 {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .main-container-grid{
+                display: grid;
+                grid-template-rows: 1fr 13fr 1fr;
+                height: 100%;
+                grid-gap: 1em;
+            }
+            .r1, .r3{
+                display: grid;
+                background-color: #9bc1bc;
+                padding: 1em;
+                align-items: center;
+            }
+            .r3{
+                text-align: center;
+            }
+            .r2 {
+                height: 100%;
+                background-color: #f4f1bb;
+            }
+            .two-column {
+                display: grid;
+                grid-template-columns: 2fr 8fr;
+                background-color: #f4f1bb;
+                grid-column-gap: 1em;
+            }
+            .three-column{
+                display: grid;
+                grid-template-columns: 2fr 8fr 3fr;
+                background-color: #f4f1bb;
+                grid-column-gap: 1em;
+            }
+            .c1{
+                min-width: 200px;
+            }
+            .c1, .c3{
+                background-color: #f4f1bb;
+            }
+            .text-center{
+                text-align: center;
+                margin: 15px auto 0px;
+                border-bottom: 1px solid #a8a7a7;
+                padding-bottom: 15px;
+            }
+            .left-nav{
+                list-style-type: none;
+            }
+            .left-nav > li > a {
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #f4f1bb;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.7s;
+                color: black;
+            }
+            .left-nav > li > a:hover{
+                background-color: #9bc1bc;
+            }
+            .c2 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: min-content;
+            }
+            .h2-content{
+                grid-column: 1 /5;
+                height: 22px;
+                width: 100%;
+            }
+            .c2 > img {
+                width: 100%;
+                align-self: center;
+                max-height: 130px;
+            }
+            .header-img{
+                height: 100px;
+                width: 250px;     
+                margin:auto;  
+            }

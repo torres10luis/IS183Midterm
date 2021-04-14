@@ -2,97 +2,7 @@
 <html>
     <head>
         <title>Luis Saldana Torres - IS183 Midterm</title>
-        <style>
-            * {
-                margin: 0px;
-                padding: 0px;
-                position: relative;
-            }
-            body html {
-                width: 100vw;
-                height: 100vh;
-            }
-            h2 {
-                font-size: 14px;
-                font-weight: bold;
-            }
-            .main-container-grid{
-                display: grid;
-                grid-template-rows: 1fr 13fr 1fr;
-                height: 100%;
-                grid-gap: 1em;
-            }
-            .r1, .r3{
-                display: grid;
-                background-color: #ccc;
-                padding: 1em;
-                align-items: center;
-            }
-            .r3{
-                text-align: center;
-            }
-            .r2 {
-                height: 100%;
-                background-color: #f1f1f1;
-            }
-            .two-column {
-                display: grid;
-                grid-template-columns: 2fr 8fr;
-                background-color: #fff;
-                grid-column-gap: 1em;
-            }
-            .three-column{
-                display: grid;
-                grid-template-columns: 2fr 8fr 3fr;
-                background-color: #fff;
-                grid-column-gap: 1em;
-            }
-            .c1{
-                min-width: 200px;
-            }
-            .c1, .c3{
-                background-color: #ccc;
-            }
-            .text-center{
-                text-align: center;
-                margin: 15px auto 0px;
-                border-bottom: 1px solid #a8a7a7;
-                padding-bottom: 15px;
-            }
-            .left-nav{
-                list-style-type: none;
-            }
-            .left-nav > li > a {
-                display: block;
-                padding: 15px 0px 15px 30px;
-                background-color: #ccc;
-                font-weight: bold;
-                text-decoration: none;
-                transition-duration: 0.7s;
-            }
-            .left-nav > li > a:hover{
-                background-color: #8d8c8c;
-            }
-            .c2 {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-auto-rows: min-content;
-            }
-            .h2-content{
-                grid-column: 1 /5;
-                height: 22px;
-                width: 100%;
-            }
-            .c2 > img {
-                width: 100%;
-                align-self: center;
-                max-height: 130px;
-            }
-            .header-img{
-                height: 100px;
-                width: auto;           
-            }
-        </style>
+        <link rel="stylesheet" href="./css/home.css">
     </head>
 
     <body class="main-container-grid">
@@ -110,20 +20,26 @@
                     <li><a href="./login.html">Login</a></li>
                 </ul>
             </div>
-            <div class="c2">
-                <h2 class="text-center h2-content">Recent product</h2>
-                    <img src="./img/pic1.jpg">
-                    <img src="./img/pic2.jpg">
-                    <img src="./img/pic1.jpg">
-                    <img src="./img/pic2.jpg">
-                    <img src="./img/pic1.jpg">
-                    <img src="./img/pic2.jpg">
-                    <img src="./img/pic1.jpg">
-                    <img src="./img/pic2.jpg">
-                    <img src="./img/pic1.jpg">
-                    <img src="./img/pic2.jpg">
-                    <img src="./img/pic1.jpg">
-                    <img src="./img/pic2.jpg">
+            <div class="c2 three-column">
+                <h1 class="text-center h2-content">Recent product</h1>
+                    <img src="./img/image_1.jpeg">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fuga aperiam expedita distinctio! Labore et 
+                        </p>
+                    <img src="./img/image_2.jpeg">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fuga aperiam expedita distinctio! Labore et 
+                        </p>
+                    <img src="./img/image_3.jpeg">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fuga aperiam expedita distinctio! Labore et 
+                        </p>
+                    <img src="./img/image_4.jpeg">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fuga aperiam expedita distinctio! Labore et 
+                        </p>
+                    <img src="./img/image_5.jpeg">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fuga aperiam expedita distinctio! Labore et 
+                        </p>
+                    <img src="./img/image_2.jpeg">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fuga aperiam expedita distinctio! Labore et 
+                        </p>
             </div>
             <div class="c3">
                 <h2 class="text-center">Recent Products</h2>

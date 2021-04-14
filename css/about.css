@@ -1,0 +1,104 @@
+            * {
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            body html {
+                width: 100vw;
+                height: 100vh;
+            }
+            h2 {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .main-container-grid{
+                display: grid;
+                grid-template-rows: 1fr 13fr 1fr;
+                height: 100%;
+                grid-gap: 1em;
+            }
+            .r1, .r3{
+                display: grid;
+                background-color: #9bc1bc;
+                padding: 1em;
+                align-items: center;
+            }
+            .r3{
+                text-align: center;
+            }
+            .r2 {
+                height: 100%;
+                background-color: #f4f1bb;
+            }
+            .two-column {
+                display: grid;
+                grid-template-columns: 2fr 8fr;
+                background-color: #f4f1bb;
+                grid-column-gap: 1em;
+            }
+            .three-column{
+                display: grid;
+                grid-template-columns: 2fr 8fr 3fr;
+                background-color: #f4f1bb;
+                grid-column-gap: 1em;
+            }
+            .c1{
+                min-width: 200px;
+            }
+            .c1, .c3{
+                background-color: #f4f1bb;
+            }
+            .text-center{
+                text-align: center;
+                margin: 15px auto 0px;
+                padding-bottom: 15px;
+            }
+            .left-nav{
+                list-style-type: none;
+            }
+            .left-nav > li > a {
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #f4f1bb;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.7s;
+                color: black;
+            }
+            .left-nav > li > a:hover{
+                background-color: #9bc1bc;
+            }
+            .c2 {
+               padding: 40px 20%;
+            }
+            .h2-content{
+                grid-column: 1 /5;
+                height: 22px;
+                width: 150px;
+                
+            }
+            .c2 > img {
+                width: 100%;
+                align-self: center;
+                max-height: 130px;
+            }
+            .back-button {
+                padding: 7px 16px;
+                background-color: #ccc;
+                float: right;
+                /* margin-bottom: 15px; */
+            }
+            .back-button:hover {
+                background-color: #f1f1f1;
+                transition-duration: 5s;
+            }
+            .header-img{
+                height: 100px;
+                width: 250px;     
+                margin:auto;  
+            }
+            .pic{
+                text-align: center;
+                margin: 15px auto 0px;
+                padding-bottom: 15px;
+            }
